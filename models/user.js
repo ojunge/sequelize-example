@@ -3,12 +3,6 @@ const {
   Model
 } = require('sequelize');
 module.exports = (sequelize, DataTypes) => {
-
-  sequelize.define('User', {
-    // ... (attributes)
-  }, {
-    tableName: 'Employees'
-  });
   class User extends Model {
     /**
      * Helper method for defining associations.
